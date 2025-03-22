@@ -8,6 +8,7 @@
 
 .header{
     max-width: 1536px;
+    overflow: hidden;
     
 }
 .header-div{
@@ -23,7 +24,7 @@
     border-radius: 30px;
     font-size: 16px;
     padding: 8px 28px;
-    border: 2px solid hsl(321, 100%, 78%);;
+    border: 2px solid hsl(321, 100%, 78%);
     background-color: hsla(210, 100%, 98%, 0.5);
     color:hsl(322, 100%, 66%);
     box-shadow: 0 0 2px 2px rgba(125, 125, 125, 0.2);
@@ -41,7 +42,7 @@
     padding-top: 120px;
 }
 .community-section h1{
-    font-size: clamp(35px, 40px, 48px);
+    font-size: clamp(35px, 4vw, 48px);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: rgb(0, 37, 46);
@@ -64,7 +65,7 @@
     border-radius: 80px;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0 0 100px 0;
     box-shadow: 0 5px 5px 5px rgba(125, 125, 125, 0.2);
     cursor: pointer;
@@ -87,7 +88,7 @@
 }
 .community-count-div h2{
     font-size: 4rem;
-    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .community-count-div p{
     font-size: 1.5rem;
@@ -208,13 +209,13 @@
 .news-letter-text h2{
     color: white;
     font-size: 30px;
-    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 20px 0;
 }
 .news-letter-text p{
     color: white;
     font-size: 18px;
-    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 20px 0;
 }
 .news-letter-form input{
@@ -225,7 +226,7 @@
     padding: 0 0 0 20px;
 }
 .news-letter-form button{
-    font-family: 'Open-Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: hsl(322, 100%, 66%);
     border: none;
     color: white;
@@ -276,7 +277,7 @@
 
     /* hello chaudhary 1.1 */
     .community-grow-n-user-section, .community-your-user-section{
-        padding: 30px;
+        padding: 15px;
         margin-bottom: 90px;
     }
     .community-grow, .community-your-user{    
@@ -288,7 +289,7 @@
     .community-grow-div, .community-your-user-div{
         order: 2;
         width: 100%;
-        padding: 0 40px;
+        padding: 0 20px;
         margin: 0 0 50px 0;
         text-align: center;
     }
@@ -299,13 +300,17 @@
     .community-grow-div p, .community-your-user-div p{
         max-width: 100%;
         font-family: 'Poppins', sans-serif;
-        padding: 0 100px;
+        padding: 0 20px;
     }
     .community-grow-image, .community-your-user-image{
         order: 1;
         margin: 50px auto auto;
     }
     /* hello chaudhary 1.2 */
+    .community-following-conversation-section{
+        padding: 15px;
+        margin-bottom: 90px;
+    }
     .community-following-section{
         padding: 30px;
         margin-bottom: 90px;
@@ -319,7 +324,7 @@
     .community-following-div{
         order: 2;
         width: 100%;
-        padding: 0 40px;
+        padding: 0 20px;
         margin: 0 0 50px 0;
         text-align: center;
     }
@@ -330,7 +335,7 @@
     .community-following-div p{
         max-width: 100%;
         font-family: 'Poppins', sans-serif;
-        padding: 0 100px;
+        padding: 0 20px;
     }
     .community-following-image{
         order: 1;
@@ -338,7 +343,7 @@
     }
     .news-letter-form input{
         margin: 0 0 30px 0;
-        width: 100%;
+        width: 100%;  
     }
 }
 @media screen and (max-width: 700px){
@@ -370,7 +375,8 @@
 
     }
     .community-count{
-        display: inline;
+        display: flex;
+        flex-direction: column;
         margin: 0 auto;
     }
     .community-count-div{
@@ -416,7 +422,8 @@
         margin: 50px auto auto;
     }
     /* hello chaudhary 2.1 */
-    .community-following-section{
+
+    .community-following-conversation-section{
         padding: 15px;
         margin-bottom: 30px;
     }
@@ -460,13 +467,13 @@
         display: flex;
         flex-direction: column;
         max-width: 300px;
-        padding: 50px 100px;
+        padding: 50px;
     }
     .news-letter-div{
         display: flex;
         flex-direction: column;
         max-width: 700px;
-        padding: 50px 100px;
+        padding: 50px;
     }
     .news-letter-form input{
         margin: 0 0 20px 0;
